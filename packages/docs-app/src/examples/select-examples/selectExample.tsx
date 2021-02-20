@@ -129,8 +129,16 @@ export class SelectExample extends React.PureComponent<IExampleProps, ISelectExa
         return (
             <>
                 <H5>Props</H5>
-                <Switch label="Disabled" checked={this.state.disabled} onChange={this.handleDisabledChange} />
-                <Switch label="Filterable" checked={this.state.filterable} onChange={this.handleFilterableChange} />
+                <Switch 
+                    label="Disabled"
+                    checked={this.state.disabled}
+                    onChange={this.handleDisabledChange} 
+                />
+                <Switch 
+                    label="Filterable"
+                    checked={this.state.filterable} 
+                    onChange={this.handleFilterableChange} 
+                />
                 <Switch
                     label="Reset on close"
                     checked={this.state.resetOnClose}
